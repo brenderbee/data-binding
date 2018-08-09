@@ -6,15 +6,7 @@ new Vue({
   },
 	methods: {
 		resultRender: function() {
-			this.result = this.counter > 5 ? 'Greater than 5' : 'Smaller than 5';
-		},
-		increase: function() {
-			this.counter++;
-			this.resultRender();
-		},
-		decrease: function() {
-			this.counter--;
-			this.resultRender();
+			return this.counter > 5 ? 'Greater than 5' : 'Smaller than 5';
 		}
 	}
 });
