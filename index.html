@@ -8,8 +8,10 @@
   </head>
   <body>
     <div id="app">
-      <input type="text" v-model="name">
-      <p>{{ name }}</p>
+      <button v-on:click="increase">Increase</button>
+      <button v-on:click="decrease">Decrease</button>
+      <p>Counter: {{ counter }}</p>
+      <p>Result: {{ result }}</p>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
